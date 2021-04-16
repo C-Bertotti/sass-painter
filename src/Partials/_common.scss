@@ -9,13 +9,10 @@ body {
 }
 
 .container {
-    @include screen(large) {
-      background-color: red;
-    }
-    @include screen(med) {
+    @include screen(small) {
       background-color: blue;
     }
-    @include screen(med-small) {
+    @include screen(med) {
       background-color: green;
     }
     @include screen(small) {
