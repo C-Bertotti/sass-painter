@@ -4,6 +4,16 @@ $secondaryColor: #0d66d0;
 
 //Typo
 $textColor: #2c2c2c;
+$textColor--neg: #fff;
+
+$fontLight: 200;
+$fontReg: 300;
+$fontMed: 400;
+$fontBold: 600;
+
+
+
+
 
 $headingS: 18px;
 $headingM: 36px;
@@ -19,6 +29,8 @@ $breakpoint-small: 576px;
 $breakpoint-med: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xlg: 1200px;
+$breakpoint-xxlg: 1400px;
+
 
 
 @mixin screen($size, $type: min, $pixels: $breakpoint-small) {
@@ -43,6 +55,12 @@ $breakpoint-xlg: 1200px;
 
   @else if $size == 'xlg' {
     @media screen and ($type + -width: $breakpoint-xlg) {
+        @content;
+    }
+  }
+
+  @else if $size == 'xxlg' {
+    @media screen and ($type + -width: $breakpoint-xxlg) {
         @content;
     }
   }

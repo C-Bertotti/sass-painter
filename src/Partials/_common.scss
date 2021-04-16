@@ -9,16 +9,37 @@ body {
 }
 
 .container {
+  width: 90%;
+  margin: 0 auto;
     @include screen(small) {
       background-color: blue;
     }
     @include screen(med) {
       background-color: green;
     }
-    @include screen(small) {
-        background-color: blue;
-    }
-    @include screen(custom, max, 400) {
+    @include screen(lg) {
         background-color: red;
     }
+    @include screen(xlg) {
+      background-color: coral;
   }
+
+  &--xl {
+    @include screen(small) {
+      max-width: 650px;
+    }
+    @include screen(med) {
+      width: 85%;
+      max-width: 800px;
+    }
+    @include screen(lg) {
+      max-width: 950px;
+    }
+    @include screen(xlg) {
+      max-width: 1100px;
+    }
+    @include screen(xxlg) {
+      max-width: 1200px;
+    }
+  }
+}

@@ -15,5 +15,14 @@
     "resolve-url-loader": "^3.1.2",
     "sass": "^1.32.8",
     "sass-loader": "^11.0.1"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/C-Bertotti/sass-painter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/C-Bertotti/sass-painter/issues"
+  },
+  "homepage": "https://github.com/C-Bertotti/sass-painter#readme"
 }
