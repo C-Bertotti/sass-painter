@@ -1,3 +1,33 @@
+h1 {
+  font-size: 44px;
+}
+
+p {
+  font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.container {
   background-color: red;
+  background-color: green;
+  background-color: red;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    background-color: blue;
+  }
+}
+@media screen and (min-width: 576px) {
+  .container {
+    background-color: blue;
+  }
 }

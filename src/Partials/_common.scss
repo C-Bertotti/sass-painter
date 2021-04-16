@@ -7,3 +7,21 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
 }
+
+.container {
+    @include screen(large) {
+      background-color: red;
+    }
+    @include screen(med) {
+      background-color: blue;
+    }
+    @include screen(med-small) {
+      background-color: green;
+    }
+    @include screen(small) {
+        background-color: blue;
+    }
+    @include screen(custom, max, 400) {
+        background-color: red;
+    }
+  }

@@ -1,0 +1,55 @@
+//Palette
+$primaryColor: #1473e6;
+$secondaryColor: #0d66d0;
+
+//Typo
+$textColor: #2c2c2c;
+
+$headingS: 18px;
+$headingM: 36px;
+$headingL: 44px;
+
+$pS: 18px;
+$pM: 20px;
+$pL: 22px;
+
+
+// Define the breakpoints
+$breakpoint-small: 576px;
+$breakpoint-med: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xlg: 1200px;
+
+
+@mixin screen($size, $type: min, $pixels: $breakpoint-small) {
+
+  @if $size == 'small' {
+    @media screen and ($type + -width: $breakpoint-small) {
+        @content;
+    }
+  }
+
+  @else if $size == 'med' {
+    @media screen and ($type + -width: $breakpoint-med) {
+        @content;
+    }
+  }
+
+  @else if $size == 'lg' {
+    @media screen and ($type + -width: $breakpoint-lg) {
+        @content;
+    }
+  }
+
+  @else if $size == 'xlg' {
+    @media screen and ($type + -width: $breakpoint-xlg) {
+        @content;
+    }
+  }
+
+  @else {
+    @content;
+  }
+
+}
+
