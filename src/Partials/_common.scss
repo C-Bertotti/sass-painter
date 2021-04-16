@@ -11,19 +11,8 @@ body {
 .container {
   width: 90%;
   margin: 0 auto;
-    @include screen(small) {
-      background-color: blue;
-    }
-    @include screen(med) {
-      background-color: green;
-    }
-    @include screen(lg) {
-        background-color: red;
-    }
-    @include screen(xlg) {
-      background-color: coral;
-  }
 
+  //responsive
   &--xl {
     @include screen(small) {
       max-width: 650px;
