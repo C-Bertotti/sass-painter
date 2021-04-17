@@ -1,0 +1,43 @@
+.feat {
+    margin: 60px auto;
+
+    //responsive
+    @include screen(small) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &:nth-child(2n) {
+        //responsive
+        @include screen(small) {
+           flex-direction: row-reverse;
+        }
+
+        img {
+            margin-right: 0;
+            margin-left: 30px;
+        }
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 30px;
+        object-fit: cover;
+
+        //responsive
+        @include screen(small) {
+            width: 55%;
+            margin-bottom: 0;
+            margin-right: 30px;
+            flex-shrink: 0;
+        }
+    }
+
+    &:nth-child(2n+1) img {
+        height: 210px;
+    }
+
+
+
+}

@@ -20,10 +20,21 @@ h2 {
     margin-bottom: 15px;
 }
 
-p {
+p, a {
     font-size: $pS;
     //responsive
-    @include screen(small) {
+    @include screen(med) {
         font-size: $pM;
+    }
+}
+
+a {
+    display: inline-block;
+    color: $primaryColor;
+    margin-top: 15px;
+
+
+    &:hover {
+        color: $secondaryColor;
     }
 }

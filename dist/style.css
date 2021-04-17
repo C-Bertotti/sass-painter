@@ -16,17 +16,26 @@ h1 {
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 26px;
   margin-bottom: 15px;
 }
 
-p {
+p, a {
   font-size: 18px;
 }
-@media screen and (min-width: 576px) {
-  p {
+@media screen and (min-width: 768px) {
+  p, a {
     font-size: 20px;
   }
+}
+
+a {
+  display: inline-block;
+  color: #1473e6;
+  margin-top: 15px;
+}
+a:hover {
+  color: #0d66d0;
 }
 
 .btn {
@@ -93,7 +102,7 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 @media screen and (min-width: 576px) {
@@ -241,4 +250,41 @@ body {
   .intro h2 > br {
     display: none;
   }
+}
+
+.feat {
+  margin: 60px auto;
+}
+@media screen and (min-width: 576px) {
+  .feat {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 576px) {
+  .feat:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+}
+.feat:nth-child(2n) img {
+  margin-right: 0;
+  margin-left: 30px;
+}
+.feat img {
+  width: 100%;
+  margin-bottom: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 576px) {
+  .feat img {
+    width: 55%;
+    margin-bottom: 0;
+    margin-right: 30px;
+    flex-shrink: 0;
+  }
+}
+.feat:nth-child(2n+1) img {
+  height: 210px;
 }
