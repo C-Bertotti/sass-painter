@@ -16,7 +16,9 @@
     "sass": "^1.32.8",
     "sass-loader": "^11.0.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/C-Bertotti/sass-painter.git"
