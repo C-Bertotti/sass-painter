@@ -7,6 +7,9 @@
         display: flex;
         align-items: center;
     }
+    @include screen(lg) {
+        margin: 100px auto;
+    }
 
     &:nth-child(2n) {
         //responsive
@@ -36,6 +39,11 @@
 
     &:nth-child(2n+1) img {
         height: 210px;
+
+        //responsive
+        @include screen(xlg) {
+            height: 400px;
+        }
     }
 
 

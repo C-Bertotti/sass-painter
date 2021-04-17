@@ -262,6 +262,11 @@ body {
     align-items: center;
   }
 }
+@media screen and (min-width: 992px) {
+  .feat {
+    margin: 100px auto;
+  }
+}
 @media screen and (min-width: 576px) {
   .feat:nth-child(2n) {
     flex-direction: row-reverse;
@@ -287,4 +292,9 @@ body {
 }
 .feat:nth-child(2n+1) img {
   height: 210px;
+}
+@media screen and (min-width: 1200px) {
+  .feat:nth-child(2n+1) img {
+    height: 400px;
+  }
 }
