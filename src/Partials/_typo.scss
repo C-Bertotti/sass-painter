@@ -1,6 +1,13 @@
+h1, h2 {
+    font-weight: $fontBold;
+}
+
+h2, h3, p {
+    color: $textColor;
+}
+
 h1 {
     font-size: $headingM;
-    font-weight: $fontBold;
     
     //responsive
     @include screen(small) {
@@ -8,6 +15,15 @@ h1 {
     }
 }
 
+h2 {
+    font-size: $headingS;
+    margin-bottom: 15px;
+}
+
 p {
-    font-size: $pM;
+    font-size: $pS;
+    //responsive
+    @include screen(small) {
+        font-size: $pM;
+    }
 }

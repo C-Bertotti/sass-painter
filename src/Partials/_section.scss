@@ -1,0 +1,20 @@
+.intro {
+    margin: 70px auto;
+    
+    //responsive
+    @include screen(small) {
+        text-align: center;
+    }
+
+    h2 > br {
+        display: none;
+
+        //responsive
+        @include screen(small) {
+            display: block;
+        }
+        @include screen(med) {
+            display: none;
+        }
+    }
+}
