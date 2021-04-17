@@ -1,6 +1,11 @@
 h1 {
-    font-size: $headingL;
+    font-size: $headingM;
     font-weight: $fontBold;
+    
+    //responsive
+    @include screen(small) {
+        font-size: $headingL;
+    }
 }
 
 p {

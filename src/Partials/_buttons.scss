@@ -6,6 +6,7 @@
     border: none;
     font-weight: $fontMed;
     color: $textColor--neg;
+    margin-right: 20px;
 
     //responsive
     @include screen(med) {
